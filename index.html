@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Schools</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 right-0 z-50 m-2">
+        <div
+            class="container mx-auto px-6 flex items-center justify-between bg-white border border-green-500 md:w-9/12 w-full mx-auto rounded-full py-2 ">
+            <div class="flex items-center">
+                <div class="text-green-500 text-xl mr-2">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h1
+                    class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-green-700">
+                    XYZ Schools
+                </h1>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-10">
+                <a href="#" class="nav-link text-gray-700 hover:text-green-600 transition duration-300">Home</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-green-600 transition duration-300">About</a>
+                <a href="#admissions"
+                    class="nav-link text-gray-700 hover:text-green-600 transition duration-300">Admissions</a>
+            </nav>
+
+            <div>
+                <button
+                    class=" hidden md:flex bg-gradient-to-b from-green-500 to-green-600 text-white px-6 py-2 rounded-full font-medium hover:from-green-600 hover:to-green-700 transition duration-300  transform hover:-translate-y-1">
+                    Contact Us
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button text-gray-500 hover:text-green-500 focus:outline-none">
+                    <svg class="h-6 w-6" fill="green" stroke="#006400 " viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+            class="mobile-menu hidden md:hidden bg-white  py-4 px-6 border border-green-500/20 w-10/12 mx-auto text-center rounded-lg">
+            <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Home</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-green-600">About</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Programs</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Admissions</a>
+            <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col-reverse lg:flex-row items-center">
+                <!-- Left Column: Content -->
+                <div class="lg:w-1/2 mt-10 lg:mt-0">
+                    <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-medium">Excellence in
+                        Education</span>
+                    <h1 class="text-4xl lg:text-5xl font-bold mt-4 leading-tight">Inspiring Minds for a <span
+                            class="text-green-600">Brighter</span> Future</h1>
+                    <p class="text-gray-600 mt-6 text-base">XYZ Schools provides world-class education with a focus on
+                        innovative teaching methods and personalized learning experiences. Join our community of future
+                        leaders, thinkers, and creators.</p>
+
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-green-600 text-white px-8 py-3 rounded-full font-medium hover:bg-green-700 transition duration-300 shadow-lg transform hover:-translate-y-1">
+                            Explore Programs
+                        </button>
+                        <button
+                            class="bg-white border border-green-600 text-green-600 px-8 py-3 rounded-full font-medium hover:bg-green-50 transition duration-300">
+                            <i class="fas fa-play-circle mr-2"></i> Watch Video
+                        </button>
+                    </div>
+
+                    <div class="mt-10 flex items-center">
+                        <div class="flex overflow-hidden -space-x-2">
+                            <img src="https://i.pravatar.cc/300" alt="Student"
+                                class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://i.pravatar.cc/300" alt="Student"
+                                class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://i.pravatar.cc/300" alt="Student"
+                                class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://i.pravatar.cc/300" alt="Student"
+                                class="w-10 h-10 rounded-full border-2 border-white">
+                        </div>
+                        <div class="ml-4">
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="ml-2 text-gray-600 font-medium">4.8/5</span>
+                            </div>
+                            <p class="text-xs text-gray-500">From over 1,200 student reviews</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="lg:w-1/2 relative">
+                    <div class="relative">
+                        <div
+                            class="absolute -top-10 -left-10 w-32 h-32 bg-green-200 rounded-full opacity-70 filter blur-xl">
+                        </div>
+                        <div
+                            class="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-200 rounded-full opacity-70 filter blur-xl">
+                        </div>
+
+                        <div class="relative z-10 animate-float">
+                            <img src="/images/hero.webp" alt="Students at XYZ School"
+                                class="hero-image rounded-xl mx-auto w-full max-w-lg object-cover">
+
+                            <div
+                                class="absolute -bottom-6 -right-6 bg-white shadow-lg rounded-lg p-4 flex items-center">
+                                <div class="bg-green-100 p-2 rounded-full text-green-600 mr-3">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">Top Ranked</p>
+                                    <p class="text-sm text-gray-500">Among private schools</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute -top-6 -left-6 bg-white shadow-lg rounded-lg p-4">
+                                <div class="flex items-center">
+                                    <div class="bg-blue-100 p-2 rounded-full text-blue-600 mr-3">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-800">98%</p>
+                                        <p class="text-sm text-gray-500">Graduate success</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-medium">About Us</span>
+                <h2 class="text-3xl lg:text-4xl font-bold mt-4 mb-4">Why Choose <span class="text-green-600">XYZ
+                        Schools</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We're dedicated to providing exceptional education that
+                    empowers students to excel academically while developing the skills needed for future success.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div
+                    class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-medal text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Excellence in Academics</h3>
+                    <p class="text-gray-600">Our rigorous curriculum is designed to challenge students and foster
+                        critical thinking skills across all subject areas.</p>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="text-green-600 font-medium flex items-center hover:text-green-700 transition duration-300">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Supportive Community</h3>
+                    <p class="text-gray-600">We foster an inclusive environment where every student feels valued,
+                        supported, and encouraged to reach their potential.</p>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="text-green-600 font-medium flex items-center hover:text-green-700 transition duration-300">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Innovative Teaching</h3>
+                    <p class="text-gray-600">Our expert faculty employs cutting-edge teaching methods that inspire
+                        creativity and a lifelong love of learning.</p>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="text-green-600 font-medium flex items-center hover:text-green-700 transition duration-300">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="mt-20 bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <!-- Stat 1 -->
+                    <div class="p-10 border-b md:border-r lg:border-b-0 border-gray-100 text-center">
+                        <h3 class="text-4xl font-bold text-green-600 mb-2">25+</h3>
+                        <p class="text-gray-600">Years of Excellence</p>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="p-10 border-b lg:border-r lg:border-b-0 border-gray-100 text-center">
+                        <h3 class="text-4xl font-bold text-green-600 mb-2">95%</h3>
+                        <p class="text-gray-600">College Acceptance</p>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="p-10 border-b md:border-r md:border-b-0 border-gray-100 text-center">
+                        <h3 class="text-4xl font-bold text-green-600 mb-2">1:12</h3>
+                        <p class="text-gray-600">Teacher to Student Ratio</p>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div class="p-10 text-center">
+                        <h3 class="text-4xl font-bold text-green-600 mb-2">50+</h3>
+                        <p class="text-gray-600">Extracurricular Activities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span
+                    class="bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full text-sm font-medium">Testimonials</span>
+                <h2 class="text-3xl lg:text-4xl font-bold mt-4">What Our Community Says</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"XYZ Schools provided my child with not just academic
+                        excellence, but a supportive environment where they could truly flourish and discover their
+                        passions."</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/300" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-500">Parent of 10th Grader</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"The teachers at XYZ Schools are exceptional. They challenged
+                        me academically while providing the guidance and support I needed to succeed."</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/300" alt="Alumni" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Chen</h4>
+                            <p class="text-sm text-gray-500">Class of 2023 Alumni</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"As a teacher, I'm proud to be part of an institution that
+                        truly values innovation in education and puts students' holistic development first."</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/300" alt="Teacher" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Dr. Michelle Rodriguez</h4>
+                            <p class="text-sm text-gray-500">Science Department Head</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-medium">FAQ</span>
+                <h2 class="text-3xl lg:text-4xl font-bold mt-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Find answers to common questions about admissions,
+                    curriculum, and campus life at XYZ Schools.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-6">
+                    <button
+                        class="faq-toggle flex items-center justify-between w-full bg-white px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-800">What is the admissions process at XYZ
+                            Schools?</span>
+                        <svg class="faq-icon w-5 h-5 text-green-600 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden bg-white px-6 py-4 rounded-b-lg shadow-md -mt-1">
+                        <p class="text-gray-600">Our admissions process involves an application submission, entrance
+                            assessment, student interview, and parent meeting. We evaluate each student holistically,
+                            considering academic potential, character, and fit with our school culture. Applications
+                            open in October for the following academic year, with priority deadlines in January.</p>
+                        <div class="mt-4 flex">
+                            <a href="#"
+                                class="text-green-600 font-medium flex items-center hover:text-green-700 transition duration-300">
+                                View detailed admissions timeline <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="mb-6">
+                    <button
+                        class="faq-toggle flex items-center justify-between w-full bg-white px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-800">What curriculum does XYZ Schools
+                            follow?</span>
+                        <svg class="faq-icon w-5 h-5 text-green-600 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden bg-white px-6 py-4 rounded-b-lg shadow-md -mt-1">
+                        <p class="text-gray-600">XYZ Schools follows a comprehensive curriculum that combines national
+                            standards with innovative approaches to learning. Our program emphasizes core subjects
+                            (mathematics, sciences, languages, humanities) while integrating project-based learning,
+                            critical thinking skills, and technology. We offer Advanced Placement (AP) courses for high
+                            school students and specialized enrichment programs in STEM, arts, and global studies.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="mb-6">
+                    <button
+                        class="faq-toggle flex items-center justify-between w-full bg-white px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-800">What extracurricular activities are
+                            available?</span>
+                        <svg class="faq-icon w-5 h-5 text-green-600 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden bg-white px-6 py-4 rounded-b-lg shadow-md -mt-1">
+                        <p class="text-gray-600">We offer over 50 extracurricular activities including:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                            <li>Athletics: Basketball, soccer, swimming, tennis, track & field, volleyball</li>
+                            <li>Arts: Choir, band, orchestra, drama, visual arts, photography</li>
+                            <li>Clubs: Debate, robotics, chess, environmental, coding, student government</li>
+                            <li>Service: Community outreach, mentoring programs, environmental initiatives</li>
+                        </ul>
+                        <p class="mt-3 text-gray-600">Activities vary by age group and campus location.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="mb-6">
+                    <button
+                        class="faq-toggle flex items-center justify-between w-full bg-white px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-800">Is financial aid available for tuition?</span>
+                        <svg class="faq-icon w-5 h-5 text-green-600 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden bg-white px-6 py-4 rounded-b-lg shadow-md -mt-1">
+                        <p class="text-gray-600">Yes, XYZ Schools is committed to making quality education accessible.
+                            We offer need-based financial aid, merit scholarships, and flexible payment plans.
+                            Applications for financial assistance are reviewed confidentially by our Financial Aid
+                            Committee. Families must submit required documentation by February 15th to be considered for
+                            aid for the following academic year.</p>
+                        <div class="mt-4 flex">
+                            <a href="#"
+                                class="text-green-600 font-medium flex items-center hover:text-green-700 transition duration-300">
+                                Financial aid resources <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="mb-6">
+                    <button
+                        class="faq-toggle flex items-center justify-between w-full bg-white px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-800">What support services are available for
+                            students?</span>
+                        <svg class="faq-icon w-5 h-5 text-green-600 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden bg-white px-6 py-4 rounded-b-lg shadow-md -mt-1">
+                        <p class="text-gray-600">We provide comprehensive support services including:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                            <li>Academic counseling and college advising</li>
+                            <li>Learning support specialists for diverse learning needs</li>
+                            <li>Mental health counselors and school psychologists</li>
+                            <li>ESL (English as a Second Language) programs</li>
+                            <li>Peer tutoring and homework help programs</li>
+                            <li>Technology assistance and digital literacy support</li>
+                        </ul>
+                        <p class="mt-3 text-gray-600">Our goal is to ensure every student has the resources they need to
+                            thrive academically, socially, and emotionally.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="mb-6">
+                    <button
+                        class="faq-toggle flex items-center justify-between w-full bg-white px-6 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 focus:outline-none"
+                        onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-gray-800">How can parents be involved at XYZ
+                            Schools?</span>
+                        <svg class="faq-icon w-5 h-5 text-green-600 transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden bg-white px-6 py-4 rounded-b-lg shadow-md -mt-1">
+                        <p class="text-gray-600">We welcome parent involvement through various channels:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                            <li>Parent-Teacher Association (PTA)</li>
+                            <li>Volunteer opportunities (field trips, events, classroom assistance)</li>
+                            <li>Parent education workshops and seminars</li>
+                            <li>School governance committees</li>
+                            <li>Fundraising initiatives and development activities</li>
+                            <li>Career day speakers and mentorship programs</li>
+                        </ul>
+                        <p class="mt-3 text-gray-600">Regular communication between parents and teachers is encouraged
+                            through conferences, digital platforms, and our open-door policy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <p class="text-gray-600">Don't see your question?</p>
+                <a href="#"
+                    class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition duration-300 shadow-lg mt-4">
+                    Contact Our Admissions Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
+                <div>
+                    <span class="bg-rose-100 text-rose-800 px-4 py-1 rounded-full text-sm font-medium">Our Blog</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold mt-4">Latest News & Articles</h2>
+                </div>
+                <a href="#"
+                    class="mt-4 md:mt-0 bg-white border border-green-600 text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition duration-300 flex items-center justify-center md:justify-start">
+                    View All Articles <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Card 1 -->
+                <div
+                    class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://placehold.co/600x400" alt="Blog Image"
+                            class="w-full h-48 object-cover transition duration-300 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-medium">Events</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="far fa-calendar-alt mr-2"></i> May 12, 2025
+                            <span class="mx-2">•</span>
+                            <i class="far fa-clock mr-2"></i> 5 min read
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 hover:text-green-600 transition duration-300">
+                            <a href="#">Annual Science Fair Showcases Student Innovation</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Our students presented remarkable projects at this year's Science
+                            Fair, demonstrating creativity and scientific thinking across all grade levels.</p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/300" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                            <span class="text-sm text-gray-600">By Emily Johnson</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div
+                    class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://placehold.co/600x400" alt="Blog Image"
+                            class="w-full h-48 object-cover transition duration-300 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">Academics</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="far fa-calendar-alt mr-2"></i> May 5, 2025
+                            <span class="mx-2">•</span>
+                            <i class="far fa-clock mr-2"></i> 4 min read
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 hover:text-green-600 transition duration-300">
+                            <a href="#">New Advanced Mathematics Program Launching This Fall</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">We're excited to announce our expanded mathematics curriculum
+                            featuring advanced topics and real-world applications for high school students.</p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/300" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                            <span class="text-sm text-gray-600">By Dr. Robert Chen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div
+                    class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://placehold.co/600x400" alt="Blog Image"
+                            class="w-full h-48 object-cover transition duration-300 hover:scale-110">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-medium">Arts</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="far fa-calendar-alt mr-2"></i> April 28, 2025
+                            <span class="mx-2">•</span>
+                            <i class="far fa-clock mr-2"></i> 3 min read
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 hover:text-green-600 transition duration-300">
+                            <a href="#">Spring Arts Festival Celebrates Student Creativity</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Our annual Spring Arts Festival highlighted incredible student
+                            talent in visual arts, music, theater, and dance performances.</p>
+                        <div class="flex items-center">
+                            <img src="https://i.pravatar.cc/300" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                            <span class="text-sm text-gray-600">By Maria Rodriguez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-green-600">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-2xl shadow-2xl p-10 md:p-16">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+                    <div class="lg:col-span-3">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-2">Subscribe to Our Newsletter</h3>
+                        <p class="text-gray-600 mb-6">Stay updated with school events, news, and important
+                            announcements.</p>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <input type="email" placeholder="Enter your email"
+                                class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <button
+                                class="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition duration-300 shadow-lg">
+                                Subscribe Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-2 flex justify-center items-center">
+                        <div class="bg-green-100 p-8 rounded-full">
+                            <div class="text-green-600 text-5xl">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="text-green-400 text-2xl mr-2">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">XYZ Schools</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Providing excellence in education since 1998. Our mission is to
+                        inspire and empower students to achieve their fullest potential.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#"
+                                class="text-gray-400 hover:text-green-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-400 hover:text-green-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-400 hover:text-green-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Programs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-400 hover:text-green-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Admissions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-400 hover:text-green-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> News & Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-400 hover:text-green-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="text-green-400 mt-1 mr-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span class="text-gray-400">123 Education Lane<br>Learning City, ED 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="text-green-400 mr-3">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <span class="text-gray-400">(555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="text-green-400 mr-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="text-gray-400">info@xyzschools.edu</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="text-green-400 mr-3">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <span class="text-gray-400">Mon-Fri: 8:00 AM - 4:30 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Gallery -->
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="pt-10 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row md:justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 XYZ Schools. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-green-400 text-sm transition duration-300">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-green-400 text-sm transition duration-300">Terms of
+                            Service</a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-green-400 text-sm transition duration-300">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+
+        function toggleFAQ(element) {
+            // Toggle active class on the button
+            element.classList.toggle('active');
+
+            // Find the content element
+            const content = element.nextElementSibling;
+
+            // Toggle the content visibility
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.classList.add('hidden');
+                element.querySelector('.faq-icon').classList.remove('rotate-180');
+            } else {
+                content.classList.remove('hidden');
+                content.style.maxHeight = content.scrollHeight + "px";
+                element.querySelector('.faq-icon').classList.add('rotate-180');
+            }
+        }
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
